@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Md. Mazharul Islam | Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600&family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+<header>
+<a class="logo disp" href="#home">Mazharul<span class="ac">.</span></a>
+<nav id="nav"></nav>
+<div class="tools">
+<button id="bSearch" title="Search" aria-label="Search">🔍</button>
+<button id="bColor" title="Change accent color" aria-label="Change accent color">🎨</button>
+<button id="bLike" title="Like" aria-label="Like">♡</button>
+<button id="bSound" title="Sound" aria-label="Sound">🔇</button>
+<button id="bMode" title="Dark or light" aria-label="Dark or light mode">☀</button>
+</div>
+</header>
+<main>
+<section class="hero" id="home">
+<div class="big disp" aria-hidden="true">Portfolio</div>
+<div class="photo" id="photo">
+<svg viewBox="0 0 300 400" aria-label="Your photo goes here"><defs><linearGradient id="g" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3a0b0e"/><stop offset="1" stop-color="#0a0707"/></linearGradient></defs><rect width="300" height="400" fill="none"/><circle cx="150" cy="130" r="62" fill="url(#g)" stroke="#6d0d11"/><path d="M30 400c0-110 50-170 120-170s120 60 120 170z" fill="url(#g)" stroke="#6d0d11"/><text x="150" y="350" fill="#a69d9b" font-size="13" text-anchor="middle" font-family="Inter,sans-serif">Your photo here</text></svg>
+</div>
+<div class="hl">
+<div class="script">Hello, I’m</div>
+<h1 class="disp" id="name">Your Name</h1>
+<div class="role" id="role"></div>
+<p id="tag">Software Engineering student at Daffodil International University. I enjoy technology, keep learning every day and I’m working towards becoming a developer.</p>
+<div class="btns"><a class="btn fill" href="#projects">See my work</a><a class="btn rv" href="#contact">View resume</a><a class="btn rd" href="#contact">Download resume</a></div>
+</div>
+<div class="hr" id="heroStats"></div>
+</section>
+
+<section id="about"><h2 class="disp">About me</h2>
+<div class="abt"><div><div class="tabs" id="abTabs" role="tablist"></div><div class="tabp" id="abPanel"></div><h3 class="sm">Interests <small>tap one to see what connects</small></h3><div id="interests"></div><div class="note" id="intNote">Pick an interest above.</div></div><div id="counters"></div></div></section>
+
+<section id="news"><h2 class="disp">News</h2><p style="color:var(--mut);margin:-14px 0 20px">Recent achievements and completed work.</p><div class="grid" id="newsList" style="grid-template-columns:repeat(auto-fit,minmax(300px,1fr));align-items:start"></div></section>
+
+<section id="skills"><h2 class="disp">Skills</h2><div class="grid" id="skillTags"></div>
+<h3 style="margin:34px 0 14px;font-size:15px">GitHub</h3>
+<div class="card gh" id="ghCard"></div></section>
+
+<section id="education"><h2 class="disp">Education</h2><div class="grid" id="eduList" style="grid-template-columns:repeat(auto-fit,minmax(320px,1fr));align-items:start"></div></section>
+
+<section id="academic"><h2 class="disp">Academic performance</h2>
+<div class="sg" id="sgStats"></div>
+<svg class="chart" id="chart" viewBox="0 0 640 260" role="img" aria-label="SGPA by semester"></svg>
+<div class="grid" id="sgCards" style="margin-top:16px"></div></section>
+
+<section id="certs"><h2 class="disp">Certificates</h2><div class="grid" id="certList"></div></section>
+
+<section id="projects"><h2 class="disp">Selected projects</h2><div class="grid" id="projList"></div></section>
+
+<section id="process"><div class="wp2"><div class="wpl"><h2 class="disp">Work process</h2><p class="lead">Tap a step to see how I approach a project.</p><div id="steps" class="stps"></div></div>
+<div class="quote wpp" id="wpp"><img id="wpimg" alt="Md. Mazharul Islam"><div class="stb"><span id="stNum" class="disp"></span><b id="stName"></b></div><div class="qt"><div class="disp" style="font-size:26px">Good design is not just how it looks, but how it works.</div><div class="script" style="font-size:28px;margin-top:10px" id="sign">Md. Mazharul Islam</div><small>Let’s create something together.</small></div></div></div></section>
+
+<section id="resume"><h2 class="disp">Resume</h2>
+<div class="rsm"><div class="rpv" id="rpv" role="button" tabindex="0" aria-label="Open the full resume"><img id="rimg" alt="Preview of Md. Mazharul Islam’s resume"><span class="rhint">Click to open the full resume</span></div>
+<div class="rin"><p class="lead" style="margin:0 0 16px">A quick look at my CV. Open it in full or save a copy.</p><div class="rfacts" id="rfacts"></div><div class="btns" style="margin-top:22px"><a class="btn fill rv" href="#contact">View full resume</a><a class="btn rd" href="#contact">Download resume</a></div></div></div></section>
+
+<section id="contact"><h2 class="disp">Let’s work together</h2>
+<p class="lead">I’m open to internships, projects and collaborations. Pick whichever way suits you best.</p>
+<div class="btns"><a class="btn rv" href="#contact">View resume</a><a class="btn fill rd" href="#contact">Download resume</a></div>
+<h3 class="sub">Reach me</h3><div class="cgrid" id="reach"></div>
+<h3 class="sub">Find me online</h3><div class="cgrid" id="online"></div>
+<div class="cform"><div class="cl2"><div><h3 class="disp" style="font-size:30px">Send me a message</h3><p style="margin-top:12px;opacity:.85">Have a project, an internship or just a question? Write a few lines and your email app will open with the message ready to send.</p></div><div style="display:grid;gap:6px;font-size:14px;opacity:.9"><span>swemazharul44@gmail.com</span><span>01872252669</span><span>Dhaka, Bangladesh</span></div></div>
+<form id="mail"><div class="row2"><div class="fld"><input id="fn" placeholder=" " required autocomplete="name"><label for="fn">Your name</label></div><div class="fld"><input id="fe" type="email" placeholder=" " required autocomplete="email"><label for="fe">Your email</label></div></div><div class="fld"><input id="fs" placeholder=" "><label for="fs">Subject</label></div><div class="qch" id="qch"></div><div class="fld"><textarea id="fm" rows="5" maxlength="500" placeholder=" " required></textarea><label for="fm">Your message</label><span class="mcnt" id="mc">0 / 500</span></div><button class="btn fill sendb" type="submit"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4z"/></svg>Send message</button></form><div class="done" id="done"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M7 12.5l3.5 3.5L17 9"/></svg><b>Opening your email app…</b><small>Your message is ready to send.</small></div></div></section>
+</main>
+<footer><span id="copy"></span><span><a href="#home" aria-label="Back to top">↑</a> <a href="#contact" aria-label="Go to contact">↓</a></span></footer>
+
+<div id="viewer"><div class="vin"><div class="vh"><b id="vt"></b><button class="btn rd" id="vd" style="display:none">Download</button><button class="btn" id="vc">Close</button></div><div id="vb"></div></div></div>
+<div id="toast" role="status"></div>
+<div id="find"><div><input id="q" placeholder="Search skills, projects, results…" autocomplete="off"><div id="hits" style="margin-top:10px"></div><button class="btn" id="closeFind" style="margin-top:12px">Close</button></div></div>
+
+<div id="chat"><div id="box"><div class="ch"><span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="7" width="16" height="12" rx="4"/><path d="M12 7V4M9 13v.01M15 13v.01M9 16.5h6"/></svg></span><div><b>Ask about Mazharul</b><small>Portfolio assistant</small></div></div><div id="msgs"></div><div class="chips" id="chips"></div><form id="cf"><input id="ci" placeholder="Ask about Mazharul…"><button class="btn fill">Send</button></form></div><button id="bChat" aria-label="Ask about Mazharul"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="7" width="16" height="12" rx="4"/><path d="M12 7V4M9 13v.01M15 13v.01M9 16.5h6"/></svg><span>Ask about Mazharul</span></button></div>
+
+<script src="js/script.js" defer></script>
+</body>
+</html>
